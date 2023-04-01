@@ -1,0 +1,15 @@
+.search {
+  height: toRem(40);
+  padding: toRem(10);
+
+  border-radius: toRem(40);
+  background: var(--primary-color);
+  &__btn {
+    float: right;
+
+    width: toRem(40);
+    height: toRem(40);
+
+    color: var(--secondary-color);
+  }
+}

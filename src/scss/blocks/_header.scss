@@ -96,6 +96,18 @@
     }
   }
 
+  &__list-item {
+    &-vl {
+      width: 80%;
+      margin: 0 auto;
+
+      opacity: 80%;
+    }
+    &:last-child > hr {
+      display: none;
+    }
+  }
+
   &__list-wrapper {
     width: 10rem;
     height: 100vh;
@@ -105,7 +117,7 @@
     background-color: var(--primary-color);
   }
 
-  &__list-item {
+  &__list-text {
     display: flex;
     align-items: center;
 
@@ -119,16 +131,6 @@
       cursor: pointer;
 
       opacity: 80%;
-    }
-  }
-
-  &__vl {
-    width: 80%;
-    margin: 0 auto;
-
-    opacity: 80%;
-    &:last-child {
-      display: none;
     }
   }
 }

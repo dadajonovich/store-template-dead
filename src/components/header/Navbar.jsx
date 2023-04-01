@@ -1,4 +1,4 @@
-function NavBar({ items, active, setActive }) {
+function Navbar({ items, active, setActive }) {
   return (
     <nav
       className='header__nav'
@@ -10,14 +10,14 @@ function NavBar({ items, active, setActive }) {
         onClick={(e) => e.stopPropagation()}
       >
         <ul className='header__list'>
-          {items.map((item, index) => (
-            <>
-              <li key={index} className='header__list-item'>
+          {items.map((item, i) => (
+            <li className='header__list-item' key={i}>
+              <a className='header__list-text' href='#'>
                 {<item.icon />}
-                <a href='#'>{item.value}</a>
-              </li>
-              <hr className='header__vl' />
-            </>
+                {item.value}
+              </a>
+              <hr className='header__list-item-vl' />
+            </li>
           ))}
         </ul>
       </div>
@@ -25,4 +25,4 @@ function NavBar({ items, active, setActive }) {
   );
 }
 
-export default NavBar;
+export default Navbar;

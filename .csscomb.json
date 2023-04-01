@@ -1,5 +1,10 @@
 {
-  "exclude": [".git/**", "node_modules/**", "bower_components/**"],
+  "exclude": [
+    ".git/**",
+    "node_modules/**",
+    "bower_components/**",
+    "src/scss/abstracts/**"
+  ],
   "sort-order": [
     ["position", "z-index", "top", "right", "bottom", "left"],
     [
