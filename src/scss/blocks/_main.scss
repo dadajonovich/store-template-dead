@@ -1,5 +1,5 @@
 main {
-  background-color: gray;
+  background-color: var(--primary-color);
   min-height: 100vh;
   padding: toRem(24);
 }
@@ -7,6 +7,7 @@ main {
 .container {
   max-width: toRem(1024);
   height: 100vh;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   margin: 0 auto;
+  border-radius: 5%;
 }

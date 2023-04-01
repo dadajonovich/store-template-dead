@@ -6,10 +6,11 @@ import {
   AiOutlineUser,
   AiFillHome,
   AiOutlineInfoCircle,
+  AiOutlineBulb,
 } from 'react-icons/ai';
-import NavBar from './NavBar';
+import Navbar from './Navbar';
 
-function Header() {
+function Header({ theme, setTheme }) {
   const items = [
     { value: 'Home', href: '/#', icon: AiFillHome },
     { value: 'About', href: '/#', icon: AiOutlineInfoCircle },
@@ -38,10 +39,15 @@ function Header() {
             <button>
               <AiOutlineUser />
             </button>
+            <button
+              onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+            >
+              <AiOutlineBulb />
+            </button>
           </div>
         </div>
       </header>
-      {<NavBar active={menuSwitch} setActive={setMenuSwitch} items={items} />}
+      {<Navbar active={menuSwitch} setActive={setMenuSwitch} items={items} />}
     </>
   );
 }

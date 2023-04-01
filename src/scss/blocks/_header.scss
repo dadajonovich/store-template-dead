@@ -5,12 +5,11 @@
   padding: toRem(5);
 
   border-bottom: solid red;
-  background-color: rgb(67 56 202);
-
+  background-color: var(--primary-color);
   & button {
     cursor: pointer;
 
-    color: #fff;
+    color: var(--secondary-color);
     border: none;
     background-color: transparent;
 
@@ -31,6 +30,7 @@
   &__menu {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     gap: toRem(12);
   }
@@ -42,7 +42,7 @@
   &__title {
     text-transform: uppercase;
 
-    color: #fff;
+    color: var(--secondary-color);
 
     font-size: toRem(24);
     font-weight: 700;
@@ -61,8 +61,8 @@
 
   &__counter {
     position: absolute;
-    top: toRem(18);
-    left: toRem(-4);
+    top: toRem(-4);
+    right: toRem(-4);
 
     display: flex;
     align-items: center;
@@ -97,12 +97,12 @@
   }
 
   &__list-wrapper {
-    width: 9rem;
+    width: 10rem;
     height: 100vh;
 
-    color: #fff;
+    color: var(--secondary-color);
     border-right: solid red;
-    background-color: rgb(67 56 202);
+    background-color: var(--primary-color);
   }
 
   &__list-item {
