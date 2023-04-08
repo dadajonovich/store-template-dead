@@ -1,14 +1,37 @@
 .search {
-  height: toRem(40);
+  display: flex;
+  justify-content: space-between;
+
+  width: toRem(220);
   padding: toRem(10);
+
+  transition: outline 0.2s ease-in-out;
 
   border-radius: toRem(40);
   background: var(--primary-color);
-  &__btn {
-    float: right;
 
-    width: toRem(40);
-    height: toRem(40);
+  font-size: toRem(24);
+
+  gap: toRem(16);
+  &:focus-within {
+    outline: 2px solid red;
+  }
+
+  &__input {
+    color: var(--secondary-color);
+    border: none;
+    outline: none;
+    background: none;
+
+    font-size: toRem(18);
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     color: var(--secondary-color);
   }

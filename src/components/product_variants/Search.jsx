@@ -3,15 +3,15 @@ import { AiOutlineSearch } from 'react-icons/ai';
 function Search() {
   return (
     <div className='search'>
+      <a className='search__btn' href='#'>
+        <AiOutlineSearch />
+      </a>
       <input
         className='search__input'
         type='text'
         name=''
-        placeholder='Search'
+        placeholder='Search...'
       />
-      <a className='search__btn' href='#'>
-        <AiOutlineSearch />
-      </a>
     </div>
   );
 }

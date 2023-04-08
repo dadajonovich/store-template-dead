@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Header from './components/header/Header';
-import Search from './components/Search';
+import Search from './components/product_variants/Search';
 
 function App() {
   const [theme, setTheme] = useState(
@@ -23,7 +23,9 @@ function App() {
     <div data-theme={theme}>
       <Header theme={theme} setTheme={setTheme} />
       <main>
-        <div className='container'>{/* <Search /> */}</div>
+        <div className='container'>
+          <Search />
+        </div>
       </main>
     </div>
   );

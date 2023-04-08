@@ -9,6 +9,7 @@ main {
   max-width: toRem(1024);
   height: 100vh;
   margin: 0 auto;
+  padding: toRem(36);
 
   border-radius: 5%;
   background-color: var(--secondary-color);
