@@ -1,9 +1,13 @@
-function Navbar({ items, active, setActive }) {
+const Navbar = ({
+  items = [],
+  menuSwitch = false,
+  setMenuSwitch = (f) => f,
+}) => {
   return (
     <nav
       className='header__nav'
-      data-state-hide={active ? 'active' : 'closed'}
-      onClick={() => setActive(false)}
+      data-state-hide={menuSwitch ? 'active' : 'closed'}
+      onClick={() => setMenuSwitch(false)}
     >
       <div
         className='header__list-wrapper'
@@ -23,6 +27,6 @@ function Navbar({ items, active, setActive }) {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
