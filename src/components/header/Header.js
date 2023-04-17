@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useReducer } from 'react';
 import {
   AiOutlineMenu,
   AiOutlineClose,
@@ -10,21 +10,22 @@ import {
 } from 'react-icons/ai';
 import Navbar from './Navbar';
 
+const items = [
+  { value: 'Home', href: '/#', icon: AiFillHome },
+  { value: 'About', href: '/#', icon: AiOutlineInfoCircle },
+];
+
 const Header = ({ setTheme = (f) => f }) => {
-  const items = [
-    { value: 'Home', href: '/#', icon: AiFillHome },
-    { value: 'About', href: '/#', icon: AiOutlineInfoCircle },
-  ];
-  const [menuSwitch, setMenuSwitch] = useState(false);
+  const [menuSwitch, setMenuSwitch] = useReducer(
+    (menuSwitch) => !menuSwitch,
+    false
+  );
   return (
     <>
       <header className='header'>
         <div className='header__wrapper'>
           <div className='header__menu'>
-            <button
-              onClick={() => setMenuSwitch(!menuSwitch)}
-              className='header__burger'
-            >
+            <button onClick={setMenuSwitch} className='header__burger'>
               {!menuSwitch ? <AiOutlineMenu /> : <AiOutlineClose />}
             </button>
             <a href='#' className='header__title'>

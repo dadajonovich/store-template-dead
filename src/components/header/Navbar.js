@@ -7,7 +7,7 @@ const Navbar = ({
     <nav
       className='header__nav'
       data-state-hide={menuSwitch ? 'active' : 'closed'}
-      onClick={() => setMenuSwitch(false)}
+      onClick={setMenuSwitch}
     >
       <div
         className='header__list-wrapper'

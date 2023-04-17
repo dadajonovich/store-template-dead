@@ -5,13 +5,6 @@ const useTheme = () => {
     JSON.parse(localStorage.getItem('themes')) || 'dark'
   );
 
-  // useEffect(() => {
-  //   const darkModeMediaQuery = window.matchMedia(
-  //     '(prefers-color-scheme: dark)'
-  //   );
-  //   setTheme(darkModeMediaQuery.matches);
-  // }, []);
-
   useEffect(
     () => localStorage.setItem('themes', JSON.stringify(theme)),
     [theme]
