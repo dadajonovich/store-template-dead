@@ -1,0 +1,47 @@
+.template {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: toRem(24);
+
+  gap: toRem(10);
+  &__title {
+    font-size: toRem(18);
+    font-weight: normal;
+  }
+  &__selected {
+    text-decoration: underline dotted;
+
+    font-weight: bold;
+  }
+  &__list {
+    display: grid;
+
+    gap: toRem(10);
+    grid-template-columns: repeat(2, 1fr);
+
+    &-item {
+      padding: toRem(14) toRem(28);
+
+      cursor: pointer;
+      text-align: center;
+
+      border: 2px solid black;
+      border-radius: 15px;
+
+      &_active {
+        padding: toRem(14) toRem(28);
+
+        cursor: pointer;
+        text-align: center;
+        text-align: center;
+
+        color: var(--secondary-color);
+        border: 2px solid black;
+        border-radius: 15px;
+        background-color: var(--primary-color);
+      }
+    }
+  }
+}

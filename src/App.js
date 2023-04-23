@@ -1,6 +1,6 @@
 import useTheme from './hooks/useTheme';
 import Header from './components/header/Header';
-import ProductsPanel from './components/products_panel/ProductsPanel';
+import Products from './components/products/Products';
 
 const App = () => {
   const [theme, setTheme] = useTheme();
@@ -10,7 +10,7 @@ const App = () => {
       <Header {...{ setTheme }} />
       <main>
         <div className='container'>
-          <ProductsPanel />
+          <Products />
         </div>
       </main>
     </div>

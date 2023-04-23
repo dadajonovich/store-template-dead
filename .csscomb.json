@@ -3,7 +3,7 @@
     ".git/**",
     "node_modules/**",
     "bower_components/**",
-    "src/scss/abstracts/**"
+    "src/assets/scss/abstracts/**"
   ],
   "sort-order": [
     ["position", "z-index", "top", "right", "bottom", "left"],

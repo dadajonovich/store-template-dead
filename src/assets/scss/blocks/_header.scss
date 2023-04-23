@@ -89,8 +89,6 @@
     transition: transform 0.5s ease-in-out;
     transform: translateX(-100%);
 
-    // background-color: yellow;
-
     &[data-state-hide='active'] {
       transform: translateX(0);
     }
