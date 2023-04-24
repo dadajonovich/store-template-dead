@@ -3,10 +3,11 @@ import Header from './components/header/Header';
 import Products from './components/products/Products';
 
 const App = () => {
-  const [theme, setTheme] = useTheme();
+  const [elementRef, setTheme] = useTheme();
+  console.log('Render App');
 
   return (
-    <div data-theme={theme}>
+    <div ref={elementRef}>
       <Header {...{ setTheme }} />
       <main>
         <div className='container'>

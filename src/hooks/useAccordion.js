@@ -1,10 +1,10 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useLayoutEffect, useRef } from 'react';
 
 function useAccordion(selectSwitch) {
   const [, setHeight] = useState(0);
   const elementRef = useRef();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (elementRef.current) {
       const element = elementRef.current;
 
