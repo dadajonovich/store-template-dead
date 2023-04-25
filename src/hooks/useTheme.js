@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 const useTheme = () => {
   const [theme, setTheme] = useState(
@@ -6,7 +6,7 @@ const useTheme = () => {
   );
   const elementRef = useRef();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     elementRef.current.setAttribute('data-theme', theme);
     localStorage.setItem('themes', JSON.stringify(theme));
   }, [theme]);
