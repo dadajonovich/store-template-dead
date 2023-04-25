@@ -21,6 +21,8 @@ const useAccordion = () => {
       element.style.maxHeight = selectSwitch
         ? getTotalScrollHeight(element) + 'px'
         : '0';
+      element.style.overflow = 'hidden';
+      element.style.transition = 'max-height 0.25s ease-in-out';
     }
   }, [selectSwitch, getTotalScrollHeight]);
 
