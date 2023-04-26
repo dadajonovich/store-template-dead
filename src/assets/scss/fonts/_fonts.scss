@@ -21,8 +21,8 @@
   font-weight: 500;
   font-style: normal;
 
-  src: url('OpenSans-Medium.woff2') format('woff2') url('OpenSans-Medium.woff')
-    format('woff');
+  src: url('OpenSans-Medium.woff2') format('woff2'),
+    url('OpenSans-Medium.woff') format('woff');
 }
 
 @font-face {
@@ -30,7 +30,7 @@
   font-weight: 600;
   font-style: normal;
 
-  src: url('OpenSans-SemiBold.woff2') format('woff2')
+  src: url('OpenSans-SemiBold.woff2') format('woff2'),
     url('OpenSans-SemiBold.woff') format('woff');
 }
 
@@ -39,8 +39,8 @@
   font-weight: 700;
   font-style: normal;
 
-  src: url('OpenSans-Bold.woff2') format('woff2') url('OpenSans-Bold.woff')
-    format('woff');
+  src: url('OpenSans-Bold.woff2') format('woff2'),
+    url('OpenSans-Bold.woff') format('woff');
 }
 
 @font-face {
@@ -48,6 +48,6 @@
   font-weight: 800;
   font-style: normal;
 
-  src: url('OpenSans-ExtraBold.woff2') format('woff2')
+  src: url('OpenSans-ExtraBold.woff2') format('woff2'),
     url('OpenSans-ExtraBold.woff') format('woff');
 }
