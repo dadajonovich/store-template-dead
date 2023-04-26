@@ -1,10 +1,18 @@
 import useAccordion from '../../hooks/useAccordion';
 
-const TemplateSelected = ({ title = '', items = [] }) => {
-  const [elementRef, setSelectSwitch] = useAccordion();
+const TemplateSelected = ({
+  selectSwitch = 'false',
+  setSelectSwitch = (f) => f,
+  title = '',
+  items = [],
+}) => {
+  const [elementRef] = useAccordion(selectSwitch);
   return (
     <div className='template'>
-      <h2 onClick={setSelectSwitch} className='template__title'>
+      <h2
+        onClick={() => setSelectSwitch((selectSwitch) => !selectSwitch)}
+        className='template__title'
+      >
         {title}
         <span className='template__selected'>All</span>
       </h2>

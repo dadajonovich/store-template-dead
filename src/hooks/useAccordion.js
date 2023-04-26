@@ -1,10 +1,6 @@
-import { useEffect, useRef, useReducer, useCallback } from 'react';
+import { useEffect, useRef, useCallback } from 'react';
 
-const useAccordion = () => {
-  const [selectSwitch, setSelectSwitch] = useReducer(
-    (selectSwitch) => !selectSwitch,
-    false
-  );
+const useAccordion = (selectSwitch) => {
   const elementRef = useRef();
 
   const getTotalScrollHeight = useCallback((element) => {
@@ -26,7 +22,7 @@ const useAccordion = () => {
     }
   }, [selectSwitch, getTotalScrollHeight]);
 
-  return [elementRef, setSelectSwitch];
+  return [elementRef];
 };
 
 export default useAccordion;
