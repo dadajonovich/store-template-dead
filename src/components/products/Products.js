@@ -41,9 +41,11 @@ const Products = () => {
         />
       </div>
       <hr
-        style={{
-          opacity: '80%',
-        }}
+        style={
+          {
+            // opacity: '80%',
+          }
+        }
       />
     </div>
   );
