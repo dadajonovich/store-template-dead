@@ -91,6 +91,7 @@
 
     &[data-state-hide='active'] {
       transform: translateX(0);
+
       backdrop-filter: blur(10px);
     }
   }

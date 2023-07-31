@@ -1,0 +1,10 @@
+.card {
+  &-product {
+    display: grid;
+  }
+  width: toRem(96);
+
+  img {
+    max-width: 100%;
+  }
+}
