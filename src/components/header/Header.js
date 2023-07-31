@@ -15,7 +15,7 @@ const items = [
   { value: 'About', href: '/#', icon: AiOutlineInfoCircle },
 ];
 
-const Header = ({ setTheme = (f) => f }) => {
+function Header({ setTheme = (f) => f }) {
   const [menuSwitch, setMenuSwitch] = useReducer(
     (menuSwitch) => !menuSwitch,
     false
@@ -49,6 +49,6 @@ const Header = ({ setTheme = (f) => f }) => {
       <Navbar {...{ menuSwitch, setMenuSwitch, items }} />
     </>
   );
-};
+}
 
 export default Header;

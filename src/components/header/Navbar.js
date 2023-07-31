@@ -1,8 +1,4 @@
-const Navbar = ({
-  items = [],
-  menuSwitch = false,
-  setMenuSwitch = (f) => f,
-}) => {
+function Navbar({ items = [], menuSwitch = false, setMenuSwitch = (f) => f }) {
   return (
     <nav
       className='header__nav'
@@ -27,6 +23,6 @@ const Navbar = ({
       </div>
     </nav>
   );
-};
+}
 
 export default Navbar;

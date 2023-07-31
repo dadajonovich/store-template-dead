@@ -6,7 +6,7 @@ import { useReducer, useState } from 'react';
 
 const categories = ['All', 'Bottles', 'Tableware', 'Other'];
 
-const Products = () => {
+function Products() {
   const [selectSwitch, setSelectSwitch] = useState(false);
   const [selectSwitchCategories, setSelectSwitchCategories] = useState(false);
   const [selectSwitchSort, setSelectSwitchSort] = useState(false);
@@ -49,6 +49,6 @@ const Products = () => {
       />
     </div>
   );
-};
+}
 
 export default Products;

@@ -1,11 +1,11 @@
 import useAccordion from '../../hooks/useAccordion';
 
-const TemplateSelected = ({
+function TemplateSelected({
   selectSwitch = 'false',
   setSelectSwitch = (f) => f,
   title = '',
   items = [],
-}) => {
+}) {
   const [elementRef] = useAccordion(selectSwitch);
   return (
     <div className='template'>
@@ -25,6 +25,6 @@ const TemplateSelected = ({
       </ul>
     </div>
   );
-};
+}
 
 export default TemplateSelected;

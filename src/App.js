@@ -3,7 +3,7 @@ import Header from './components/header/Header';
 import Products from './components/products/Products';
 import Card from './components/Card';
 
-const App = () => {
+function App() {
   const [elementRef, setTheme] = useTheme();
   console.log('Render App');
 
@@ -13,11 +13,11 @@ const App = () => {
       <main>
         <div className='container'>
           <Products />
-          <Card />
+          {/* <Card /> */}
         </div>
       </main>
     </div>
   );
-};
+}
 
 export default App;

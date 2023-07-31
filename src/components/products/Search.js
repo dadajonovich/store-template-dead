@@ -1,6 +1,6 @@
 import { AiOutlineSearch } from 'react-icons/ai';
 
-const Search = () => {
+function Search() {
   return (
     <div className='search'>
       <a className='search__btn' href='#'>
@@ -14,6 +14,6 @@ const Search = () => {
       />
     </div>
   );
-};
+}
 
 export default Search;
