@@ -1,7 +1,9 @@
 .header {
   position: sticky;
   top: 0;
-
+  height: toRem(54);
+  display: flex;
+  align-items: center;
   padding: toRem(5);
 
   border-bottom: solid red;
@@ -23,7 +25,7 @@
     display: flex;
     justify-content: space-between;
 
-    max-width: toRem(1024);
+    width: toRem(1024);
     margin: 0 auto;
   }
 

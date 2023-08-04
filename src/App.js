@@ -26,12 +26,11 @@ function App() {
       <main>
         <div className='container'>
           <Products />
-          <div className='card-product'>
-            {' '}
+          <section className='card-block'>
             {articles.map((item, index) => (
               <Card key={index} {...item} />
-            ))}{' '}
-          </div>
+            ))}
+          </section>
         </div>
       </main>
     </div>

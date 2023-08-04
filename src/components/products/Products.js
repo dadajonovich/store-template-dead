@@ -18,7 +18,7 @@ function Products() {
   };
   const [elementRef] = useAccordion(selectSwitch);
   return (
-    <div className='products'>
+    <article className='products'>
       <div className='products__wrapper'>
         <span className='products__btn' onClick={handleSetSelectSwitch}>
           <AiOutlineAppstore />
@@ -47,7 +47,7 @@ function Products() {
           }
         }
       />
-    </div>
+    </article>
   );
 }
 
