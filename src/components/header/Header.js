@@ -26,7 +26,7 @@ function Header({ setTheme = (f) => f }) {
         <div className='header__wrapper'>
           <div className='header__menu'>
             <button onClick={setMenuSwitch} className='header__burger'>
-              {!menuSwitch ? <AiOutlineMenu /> : <AiOutlineClose />}
+              {menuSwitch ? <AiOutlineClose /> : <AiOutlineMenu />}
             </button>
             <a href='#' className='header__title'>
               Tupperware Store

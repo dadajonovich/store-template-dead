@@ -1,3 +1,19 @@
-.button:active {
-  transform: translateY(1px);
+.button {
+  display: inline-block;
+
+  min-width: toRem(100);
+  padding: toRem(10) toRem(20);
+
+  text-align: center;
+
+  border-radius: toRem(30);
+  &:hover {
+    cursor: pointer;
+
+    opacity: 80%;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
 }

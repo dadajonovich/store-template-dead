@@ -1,14 +1,18 @@
 .header {
   position: sticky;
   top: 0;
-  height: toRem(54);
+
   display: flex;
   align-items: center;
+
+  height: toRem(54);
   padding: toRem(5);
+
+  transition: color 0.1s, background-color 0.1s;
 
   border-bottom: solid red;
   background-color: var(--primary-color);
-  & button {
+  button {
     cursor: pointer;
 
     color: var(--secondary-color);
@@ -52,6 +56,7 @@
 
   &__left {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
     gap: toRem(24);

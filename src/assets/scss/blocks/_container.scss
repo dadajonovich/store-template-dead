@@ -2,6 +2,8 @@ main {
   min-height: 100vh;
   padding: toRem(24);
 
+  transition: color 0.1s, background-color 0.1s;
+
   background-color: var(--primary-color);
 }
 
@@ -10,6 +12,8 @@ main {
   // height: 100vh;
   margin: 0 auto;
   padding: toRem(24);
+
+  transition: color 0.1s, background-color 0.1s;
 
   border-radius: 5%;
   background-color: var(--secondary-color);
