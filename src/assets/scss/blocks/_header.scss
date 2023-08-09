@@ -103,20 +103,9 @@
     }
   }
 
-  &__list-item {
-    &-vl {
-      width: 80%;
-      margin: 0 auto;
-
-      opacity: 80%;
-    }
-    &:last-child > hr {
-      display: none;
-    }
-  }
-
   &__list-wrapper {
-    width: 10rem;
+    display: inline-block;
+
     height: 100vh;
 
     color: var(--secondary-color);
@@ -124,11 +113,25 @@
     background-color: var(--primary-color);
   }
 
+  &__list {
+    &-item {
+      &-vl {
+        width: 80%;
+        margin: 0 auto;
+
+        opacity: 80%;
+      }
+      &:last-child > hr {
+        display: none;
+      }
+    }
+  }
+
   &__list-text {
     display: flex;
     align-items: center;
 
-    margin-left: 1rem;
+    margin: 0 1rem 0 1rem;
 
     font-size: toRem(18);
     line-height: toRem(36);

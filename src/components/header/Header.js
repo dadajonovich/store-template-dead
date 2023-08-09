@@ -20,6 +20,7 @@ function Header({ setTheme = (f) => f }) {
     (menuSwitch) => !menuSwitch,
     false
   );
+
   return (
     <>
       <header className='header'>

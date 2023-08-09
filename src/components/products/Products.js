@@ -5,6 +5,7 @@ import useAccordion from '../../hooks/useAccordion';
 import { useReducer, useState } from 'react';
 
 const categories = ['All', 'Bottles', 'Tableware', 'Other'];
+const sortCategories = [];
 
 function Products() {
   const [selectSwitch, setSelectSwitch] = useState(false);
