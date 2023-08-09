@@ -34,13 +34,6 @@
       border-radius: 15px;
 
       &_active {
-        padding: toRem(14) toRem(28);
-
-        cursor: pointer;
-        text-align: center;
-
-        border: 2px solid var(--primary-color);
-        border-radius: 15px;
         background-color: purple;
       }
     }

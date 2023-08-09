@@ -30,7 +30,7 @@ function TemplateSelected({
             onClick={() => setActiveIndex(index)}
             className={
               activeIndex === index
-                ? 'template__list-item_active'
+                ? 'template__list-item template__list-item_active'
                 : 'template__list-item'
             }
             key={index}
