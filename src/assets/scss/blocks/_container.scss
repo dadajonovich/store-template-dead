@@ -1,19 +1,23 @@
-main {
-  min-height: 100vh;
-  padding: toRem(24);
+.container {
+  // height: 100vh;
 
   transition: color 0.1s, background-color 0.1s;
 
   background-color: var(--primary-color);
 }
 
-.container {
+main {
+  height: 100%;
+  padding: toRem(24);
+
+  background-color: var(--primary-color);
+}
+
+.catalog {
   width: toRem(1024);
   // height: 100vh;
   margin: 0 auto;
   padding: toRem(24);
-
-  transition: color 0.1s, background-color 0.1s;
 
   border-radius: 5%;
   background-color: var(--secondary-color);

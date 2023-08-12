@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 
-const useTheme = () => {
+function useTheme() {
   const [theme, setTheme] = useState(
     JSON.parse(localStorage.getItem('themes')) || 'dark'
   );
@@ -12,6 +12,6 @@ const useTheme = () => {
   }, [theme]);
 
   return [elementRef, () => setTheme(theme === 'light' ? 'dark' : 'light')];
-};
+}
 
 export default useTheme;
