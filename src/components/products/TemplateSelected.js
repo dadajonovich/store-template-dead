@@ -10,6 +10,10 @@ function TemplateSelected({
   const [activeIndex, setActiveIndex] = useState(0);
   const [elementRef] = useAccordion(selectSwitch);
 
+  const templateListItemClassName = 'template__list-item';
+  const templateListItemActiveClassName =
+    'template__list-item template__list-item_active';
+
   // const handleClickSelect = (index) => {
   //   if (index === activeIndex) {
   //     setActiveIndex();
@@ -30,8 +34,8 @@ function TemplateSelected({
             onClick={() => setActiveIndex(index)}
             className={
               activeIndex === index
-                ? 'template__list-item template__list-item_active'
-                : 'template__list-item'
+                ? templateListItemActiveClassName
+                : templateListItemClassName
             }
             key={index}
           >

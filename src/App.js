@@ -1,24 +1,17 @@
-import { useState, useEffect } from 'react';
 import useTheme from './hooks/useTheme';
 import Header from './components/header/Header';
 import Products from './components/products/Products';
-import Card from './components/Card';
+import Card from './components/Card/Card';
+import SkeletonCard from './components/Card/SkeletonCard';
+import useFetch from './hooks/useFetch';
 
 function App() {
   const [elementRef, setTheme] = useTheme();
   console.log('Render App');
 
-  const [articles, setArticles] = useState([]);
-
-  useEffect(() => {
-    fetch('https://640df143b07afc3b0dba8dc9.mockapi.io/articles')
-      .then((res) => {
-        return res.json();
-      })
-      .then((arr) => {
-        setArticles(arr);
-      });
-  }, []);
+  const { loading, data, error } = useFetch(
+    'https://640df143b07afc3b0dba8dc9.mockapi.io/articles'
+  );
 
   return (
     <div ref={elementRef}>
@@ -27,9 +20,11 @@ function App() {
         <div className='container'>
           <Products />
           <section className='card-block'>
-            {articles.map((item, index) => (
-              <Card key={index} {...item} />
-            ))}
+            {loading
+              ? [...new Array(6)].map((_, index) => (
+                  <SkeletonCard key={index} />
+                ))
+              : data.map((item, index) => <Card key={index} {...item} />)}
           </section>
         </div>
       </main>

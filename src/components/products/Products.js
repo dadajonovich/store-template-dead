@@ -2,7 +2,7 @@ import TemplateSelected from './TemplateSelected';
 import Search from './Search';
 import { AiOutlineAppstore } from 'react-icons/ai';
 import useAccordion from '../../hooks/useAccordion';
-import { useReducer, useState } from 'react';
+import { useState } from 'react';
 
 const categories = ['All', 'Bottles', 'Tableware', 'Other'];
 const sortCategories = [];
@@ -23,7 +23,7 @@ function Products() {
       <div className='products__wrapper'>
         <span className='products__btn' onClick={handleSetSelectSwitch}>
           <AiOutlineAppstore />
-          <p>Products</p>
+          <p>Categories</p>
         </span>
         <Search />
       </div>
