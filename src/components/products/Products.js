@@ -5,7 +5,7 @@ import useAccordion from '../../hooks/useAccordion';
 import { useState } from 'react';
 
 const categories = ['All', 'Bottles', 'Tableware', 'Other'];
-const sortCategories = [];
+const sortCategories = ['Popularity'];
 
 function Products() {
   const [selectSwitch, setSelectSwitch] = useState(false);
@@ -38,7 +38,7 @@ function Products() {
           selectSwitch={selectSwitchSort}
           setSelectSwitch={setSelectSwitchSort}
           title={'Sort by: '}
-          items={categories}
+          items={sortCategories}
         />
       </div>
       <hr

@@ -8,6 +8,8 @@
   height: toRem(54);
   padding: toRem(5);
 
+  transition: color 0.25s, background-color 0.25s;
+
   border-bottom: solid red;
   background-color: var(--primary-color);
   button {

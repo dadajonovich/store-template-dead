@@ -26,7 +26,7 @@ function TemplateSelected({
         className='template__title'
       >
         {title}
-        <span className='template__selected'>All</span>
+        <span className='template__selected'>{items[activeIndex]}</span>
       </h2>
       <ul ref={elementRef} className='template__list'>
         {items.map((item, index) => (

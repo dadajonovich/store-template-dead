@@ -42,7 +42,9 @@ function Header({ setTheme = (f) => f }) {
               </Link>
             </button>
             <button>
-              <AiOutlineUser />
+              <Link to='authorization'>
+                <AiOutlineUser />
+              </Link>
             </button>
             <button onClick={setTheme}>
               <AiOutlineBulb />
