@@ -14,7 +14,7 @@
 
   gap: toRem(16);
   &:focus-within {
-    outline: 2px solid red;
+    outline: toRem(2) solid red;
   }
 
   &__input {

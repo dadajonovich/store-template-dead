@@ -1,4 +1,5 @@
 import { useReducer } from 'react';
+import { Link } from 'react-router-dom';
 import {
   AiOutlineMenu,
   AiOutlineClose,
@@ -29,14 +30,16 @@ function Header({ setTheme = (f) => f }) {
             <button onClick={setMenuSwitch} className='header__burger'>
               {menuSwitch ? <AiOutlineClose /> : <AiOutlineMenu />}
             </button>
-            <a href='#' className='header__title'>
+            <Link to='/' className='header__title'>
               Tupperware Store
-            </a>
+            </Link>
           </div>
           <div className='header__left'>
             <button className='header__cart'>
-              <AiOutlineShoppingCart />
-              <span className='header__counter'>1</span>
+              <Link to='/cart'>
+                <AiOutlineShoppingCart />
+                <span className='header__counter'>1</span>
+              </Link>
             </button>
             <button>
               <AiOutlineUser />

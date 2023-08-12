@@ -8,22 +8,26 @@
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: toRem(28);
+
+    @include respond(tablet) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__item {
     width: toRem(384);
     height: toRem(484);
 
-    border-radius: 15px 15px 0 0;
+    border-radius: toRem(15) toRem(15) 0 0;
     // border: 3px solid var(--primary-color);
-    outline: 1.5px solid var(--primary-color);
+    outline: toRem(1.5) solid var(--primary-color);
     background-color: var(--primary-color);
-    box-shadow: 0 4px 8px 0 var(--primary-color);
+    box-shadow: 0 toRem(4) toRem(8) 0 var(--primary-color);
 
     figure {
       overflow: hidden;
 
-      border-radius: 15px 15px 0 0;
+      border-radius: toRem(15) toRem(15) 0 0;
     }
 
     img {

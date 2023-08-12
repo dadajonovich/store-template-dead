@@ -41,11 +41,11 @@
 @keyframes glitch {
   2%,
   64% {
-    transform: translate(2px, 0) skew(0deg);
+    transform: translate(toRem(2), 0) skew(0deg);
   }
   4%,
   60% {
-    transform: translate(-2px, 0) skew(0deg);
+    transform: translate(toRem(-2), 0) skew(0deg);
   }
   62% {
     transform: translate(0, 0) skew(5deg);
@@ -55,27 +55,27 @@
 @keyframes glitchTop {
   2%,
   64% {
-    transform: translate(2px, -2px);
+    transform: translate(toRem(2), toRem(-2));
   }
   4%,
   60% {
-    transform: translate(-2px, 2px);
+    transform: translate(toRem(-2), toRem(2));
   }
   62% {
-    transform: translate(13px, -1px) skew(-13deg);
+    transform: translate(toRem(13), toRem(1)) skew(-13deg);
   }
 }
 
 @keyframes glitchBotom {
   2%,
   64% {
-    transform: translate(-2px, 0);
+    transform: translate(toRem(-2), 0);
   }
   4%,
   60% {
-    transform: translate(-2px, 0);
+    transform: translate(toRem(-2), 0);
   }
   62% {
-    transform: translate(-22px, 5px) skew(21deg);
+    transform: translate(toRem(-22), toRem(5)) skew(21deg);
   }
 }

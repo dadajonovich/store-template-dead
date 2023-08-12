@@ -19,6 +19,6 @@ main {
   margin: 0 auto;
   padding: toRem(24);
 
-  border-radius: 5%;
+  border-radius: toRem(28);
   background-color: var(--secondary-color);
 }
