@@ -15,7 +15,7 @@ function Card({ imageUrl, title, price }) {
         <h2 className='card__title'>{title}</h2>
         <div className='card__bottom'>
           <p className='card__price'>{formatPrice(price)}</p>
-          <button className='button'>Добавить</button>
+          <button className='button'>Add to cart</button>
         </div>
       </div>
     </article>

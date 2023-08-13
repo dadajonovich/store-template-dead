@@ -10,6 +10,7 @@ function useFetch(uri) {
       .then(setData)
       .then(() => setLoading(false))
       .catch(setError);
+    window.scrollTo(0, 0);
   }, [uri]);
   return {
     loading,

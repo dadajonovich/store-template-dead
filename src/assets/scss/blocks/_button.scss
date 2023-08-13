@@ -9,11 +9,8 @@
   border-radius: toRem(30);
 
   font-size: toRem(14);
-  &:hover {
-    cursor: pointer;
 
-    opacity: 80%;
-  }
+  @include btn-hover;
 
   &:active {
     transform: translateY(1px);

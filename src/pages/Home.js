@@ -13,7 +13,7 @@ function Home() {
       <article className='card-block'>
         {loading
           ? [...new Array(6)].map((_, index) => <SkeletonCard key={index} />)
-          : data.map((item, index) => <Card key={index} {...item} />)}
+          : data.map((item, index) => <Card key={item.id} {...item} />)}
       </article>
     </section>
   );

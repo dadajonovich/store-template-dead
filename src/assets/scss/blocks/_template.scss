@@ -22,7 +22,7 @@
     display: grid;
 
     gap: toRem(10);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
 
     &-item {
       padding: toRem(14) toRem(28);

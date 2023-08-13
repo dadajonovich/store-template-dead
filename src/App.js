@@ -5,6 +5,7 @@ import Header from './components/header/Header';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Cart from './pages/Cart';
+import Footer from './components/footer/Footer';
 
 function App() {
   const [elementRef, setTheme] = useTheme();
@@ -20,6 +21,7 @@ function App() {
           <Route path='/cart' element={<Cart />} />
         </Routes>
       </main>
+      <Footer />
     </div>
   );
 }
