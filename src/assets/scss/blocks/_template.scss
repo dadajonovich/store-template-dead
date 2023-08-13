@@ -19,10 +19,10 @@
     font-weight: bold;
   }
   &__list {
-    display: grid;
+    display: flex;
 
     gap: toRem(10);
-    grid-template-columns: repeat(2, auto);
+    // grid-template-columns: repeat(auto, auto);
 
     &-item {
       padding: toRem(14) toRem(28);
